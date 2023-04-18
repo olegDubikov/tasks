@@ -1,8 +1,6 @@
 package concat;
 
 public class ConcatTest {
-    public ConcatTest() {
-    }
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();

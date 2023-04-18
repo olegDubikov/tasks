@@ -3,8 +3,6 @@ package concat;
 import java.util.StringJoiner;
 
 public class StringJoinerExample {
-    public StringJoinerExample() {
-    }
 
     public static void main(String[] args) {
         StringJoiner stringJoiner = new StringJoiner(", ", "[", "]");
