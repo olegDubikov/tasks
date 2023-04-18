@@ -9,4 +9,3 @@ public class ConcatExample {
         System.out.println(str);
     }
 }
-
