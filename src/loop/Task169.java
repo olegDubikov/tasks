@@ -9,9 +9,8 @@ public class Task169 {
         int columnCount = in.nextInt();
         String star = "*";
         String space = " ";
-
-        for(int i = 0; i < columnCount; ++i) {
-            for(int j = 0; j < columnCount; ++j) {
+        for (int i = 0; i < columnCount; ++i) {
+            for (int j = 0; j < columnCount; ++j) {
                 boolean stars = j >= i && j <= columnCount - 1 - i || j <= i && j >= columnCount - 1 - i;
                 boolean spaces = i > j;
                 if (stars) {
@@ -20,9 +19,7 @@ public class Task169 {
                     System.out.print(space);
                 }
             }
-
             System.out.println();
         }
-
     }
 }
