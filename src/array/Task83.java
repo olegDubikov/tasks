@@ -4,28 +4,30 @@ import java.util.Arrays;
 
 public class Task83 {
     public static int[] sumOfTwo(int[] numbers, int goal) {
-        int x = 0;
+        int i = 0;
+        int j = 0;
         int[] arr = new int[2];
-        while (x < numbers.length - 1) {
-            for (var i = x + 1; i < numbers.length; i++) {
-                if (goal - numbers[x] == numbers[i]) {
-                    arr[0] = x;
-                    arr[1] = i;
-                    break;
-                }
+        while (j < numbers.length - 1) {
+            if (goal - numbers[j] == numbers[i]) {
+                arr[0] = j;
+                arr[1] = i;
+                break;
             }
-            x++;
+            if (i == numbers.length - 1) {
+                i = j + 1;
+                j++;
+            }
+            i++;
         }
-        if (numbers.length <= 1
-                || arr[0] == 0 && arr[1] == 0) {
+        if (arr[0] == 0 && arr[1] == 0) {
             arr = null;
         }
         return arr;
     }
 
     public static void main(String[] args) {
-        int[] arr = {9,5,7,3,1,2};
-        System.out.println(Arrays.toString(sumOfTwo(arr, 20)));
+        int[] arr = {1, 2, 3, 4};
+        System.out.println(Arrays.toString(sumOfTwo(arr, 7)));
     }
 }
 
