@@ -6,11 +6,10 @@ public class Task83 {
     public static int[] sumOfTwo(int[] numbers, int goal) {
         int i = 0;
         int j = 0;
-        int[] arr = new int[2];
+        int[] arr = null;
         while (j < numbers.length - 1) {
             if (goal - numbers[j] == numbers[i]) {
-                arr[0] = j;
-                arr[1] = i;
+                arr = new int[] {j, i};
                 break;
             }
             if (i == numbers.length - 1) {
@@ -18,9 +17,6 @@ public class Task83 {
                 j++;
             }
             i++;
-        }
-        if (arr[0] == 0 && arr[1] == 0) {
-            arr = null;
         }
         return arr;
     }
