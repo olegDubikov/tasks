@@ -10,7 +10,6 @@ public class Task83 {
         while (j < numbers.length - 1) {
             if (goal - numbers[j] == numbers[i]) {
                 arr = new int[] {j, i};
-                break;
             }
             if (i == numbers.length - 1) {
                 i = j + 1;
@@ -22,8 +21,8 @@ public class Task83 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
-        System.out.println(Arrays.toString(sumOfTwo(arr, 7)));
+        int[] arr = {3, 2, 4};
+        System.out.println(Arrays.toString(sumOfTwo(arr, 6)));
     }
 }
 
