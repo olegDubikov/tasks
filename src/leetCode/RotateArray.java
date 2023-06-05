@@ -1,8 +1,8 @@
-package array;
+package leetCode;
 
 import java.util.Arrays;
 
-class Solution {
+class RotateArray {
     public static void rotate(int[] nums, int k) {
         if (k == 1) {
             int temp = nums[nums.length - 1];
