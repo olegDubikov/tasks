@@ -6,9 +6,8 @@ import java.util.List;
 
 public class Article {
     public static boolean generateBy(String origin, String line) {
-        String s = origin.replaceAll("\\p{Punct}", "");
-        List<String> origin1 = new ArrayList<>(Arrays.asList(s.split("\\s\\b")));
-        List<String> line1 = new ArrayList<>(Arrays.asList(line.split("\\s\\b")));
+        List<String> origin1 = new ArrayList<>(Arrays.asList(origin.split("[ .,:!]+")));
+        List<String> line1 = new ArrayList<>(Arrays.asList(line.split(" ")));
         for (String s1 : origin1) {
             line1.remove(s1);
         }
