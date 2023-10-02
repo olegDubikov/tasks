@@ -13,6 +13,10 @@ public class Task79 {
         avg /= grades.length;
         System.out.printf("Средняя оценка: %s, неуд. оценка: %s%n", avg, bad);
     }
+
+    public static void main(String[] args) {
+        loop(new int[]{3, 1, 2, 5, 5});
+    }
 }
 
 /*
