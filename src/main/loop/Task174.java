@@ -18,6 +18,6 @@ public class Task174 {
     }
 
     public static void main(String[] args) {
-        isPalindrome(2);
+        isPalindrome(22323);
     }
 }

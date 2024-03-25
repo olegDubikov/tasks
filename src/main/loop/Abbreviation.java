@@ -9,11 +9,7 @@ public class Abbreviation {
         for (var t : text) {
             joiner.add(String.valueOf(t.charAt(0)));
         }
-         return String.valueOf(joiner);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(collect("Chief Executive Officer"));
+        return String.valueOf(joiner);
     }
 }
 
