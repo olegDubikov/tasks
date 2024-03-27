@@ -9,6 +9,7 @@ public class AddIndexElement {
         if (!check.contains(str)) {
             list.add(index, str);
         }
+        System.out.println(list);
         return check.size() != list.size();
     }
 }
