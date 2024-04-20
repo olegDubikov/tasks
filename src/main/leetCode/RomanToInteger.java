@@ -13,9 +13,7 @@ public class RomanToInteger {
         romanMap.put('C', 100);
         romanMap.put('D', 500);
         romanMap.put('M', 1000);
-
         int sum = 0;
-
         for (int i = 0; i < s.length(); i++) {
             if (i > 0 && romanMap.get(s.charAt(i)) > romanMap.get(s.charAt(i - 1))) {
                 sum += romanMap.get(s.charAt(i)) - 2 * romanMap.get(s.charAt(i - 1));
@@ -23,7 +21,6 @@ public class RomanToInteger {
                 sum += romanMap.get(s.charAt(i));
             }
         }
-
         return sum;
     }
 }
